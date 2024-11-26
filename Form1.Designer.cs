@@ -151,6 +151,7 @@
             label4.TabIndex = 2;
             label4.Text = "Ingresa tu nombre de usuario y tu contraseña\r\ndespués dale al botón de continuar.\r\n\r\n\r\n\r\n";
             label4.TextAlign = ContentAlignment.TopCenter;
+            label4.Click += label4_Click;
             // 
             // label3
             // 
