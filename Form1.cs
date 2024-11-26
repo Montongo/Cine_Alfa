@@ -43,8 +43,8 @@ namespace Cine_Alfa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            form.Show();
+            Catalogo ca = new Catalogo();
+            ca.Show();
             this.Hide();
 
         }
@@ -57,6 +57,11 @@ namespace Cine_Alfa
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
