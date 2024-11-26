@@ -35,17 +35,19 @@
             Ingresa_usuario = new TextBox();
             Ingresa_password = new TextBox();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.BackColor = Color.DarkRed;
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Location = new Point(520, -1);
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(411, 1);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(254, 249);
+            pictureBox1.Size = new Size(434, 338);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -54,11 +56,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ControlText;
-            label1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Impact", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(395, 314);
             label1.Name = "label1";
-            label1.Size = new Size(74, 25);
+            label1.Size = new Size(86, 28);
             label1.TabIndex = 1;
             label1.Text = "Usuario";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -68,18 +70,19 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = SystemColors.ControlText;
-            label2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Impact", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(395, 428);
             label2.Name = "label2";
-            label2.Size = new Size(90, 25);
+            label2.Size = new Size(105, 28);
             label2.TabIndex = 2;
             label2.Text = "Password";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // Ingresa_usuario
             // 
-            Ingresa_usuario.Location = new Point(532, 312);
+            Ingresa_usuario.Location = new Point(532, 314);
+            Ingresa_usuario.Margin = new Padding(3, 4, 3, 4);
             Ingresa_usuario.Name = "Ingresa_usuario";
             Ingresa_usuario.Size = new Size(230, 27);
             Ingresa_usuario.TabIndex = 3;
@@ -88,6 +91,7 @@
             // Ingresa_password
             // 
             Ingresa_password.Location = new Point(534, 427);
+            Ingresa_password.Margin = new Padding(3, 4, 3, 4);
             Ingresa_password.Name = "Ingresa_password";
             Ingresa_password.Size = new Size(228, 27);
             Ingresa_password.TabIndex = 4;
@@ -95,27 +99,44 @@
             // 
             // button1
             // 
-            button1.Location = new Point(835, 494);
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(599, 492);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 5;
-            button1.Text = "aceptar";
+            button1.Text = "Aceptar";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ScrollBar;
+            button2.Location = new Point(34, 631);
+            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(202, 29);
+            button2.TabIndex = 6;
+            button2.Text = "terminos y condiciones";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.james_lee_YpDkIh137ws_unsplash;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1262, 673);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(Ingresa_password);
             Controls.Add(Ingresa_usuario);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
+            SizeGripStyle = SizeGripStyle.Show;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -131,5 +152,6 @@
         private TextBox Ingresa_usuario;
         private TextBox Ingresa_password;
         private Button button1;
+        private Button button2;
     }
 }

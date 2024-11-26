@@ -22,7 +22,7 @@ namespace Cine_Alfa
         private void Form1_Load(object sender, EventArgs e)
         {
             Conexion c = new Conexion();
-           
+
 
         }
 
@@ -46,7 +46,14 @@ namespace Cine_Alfa
             Form2 form = new Form2();
             form.Show();
             this.Hide();
-            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            terminos te = new terminos();
+            te.Show();
+            this.Hide();
         }
     }
 }

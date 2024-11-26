@@ -50,6 +50,7 @@
             label15 = new Label();
             label16 = new Label();
             label17 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -169,19 +170,20 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = SystemColors.ActiveCaption;
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(-20, -46);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(261, 247);
+            pictureBox1.Size = new Size(337, 307);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
-            button1.Font = new Font("Elephant", 19.8000011F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Location = new Point(12, 461);
+            button1.Font = new Font("Candara", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(550, 541);
             button1.Name = "button1";
             button1.Size = new Size(185, 78);
             button1.TabIndex = 19;
@@ -244,12 +246,25 @@
             label17.Size = new Size(326, 31);
             label17.TabIndex = 25;
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ActiveCaption;
+            button2.Font = new Font("Candara", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(26, 541);
+            button2.Name = "button2";
+            button2.Size = new Size(185, 78);
+            button2.TabIndex = 26;
+            button2.Text = "Atras";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1262, 673);
+            Controls.Add(button2);
             Controls.Add(label17);
             Controls.Add(label16);
             Controls.Add(label15);
@@ -273,6 +288,7 @@
             Controls.Add(label1);
             Name = "Form4";
             Text = "Form4";
+            Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -301,5 +317,6 @@
         private Label label15;
         private Label label16;
         private Label label17;
+        private Button button2;
     }
 }

@@ -93,6 +93,16 @@ namespace Cine_Alfa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap asiento {
+            get {
+                object obj = ResourceManager.GetObject("asiento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap james_lee_YpDkIh137ws_unsplash {
             get {
                 object obj = ResourceManager.GetObject("james-lee-YpDkIh137ws-unsplash", resourceCulture);
