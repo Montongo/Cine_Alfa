@@ -118,25 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="james-lee-YpDkIh137ws-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\james-lee-YpDkIh137ws-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="abstract-background-design-background-design-free-photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract-background-design-background-design-free-photo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="556c7086f4cb57320c5c07d3a824cf40_400x400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\556c7086f4cb57320c5c07d3a824cf40_400x400.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="asiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="png-clipart-ares-galaxy-mobile-app-android-application-package-peer-to-peer-android-globe-trademark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-ares-galaxy-mobile-app-android-application-package-peer-to-peer-android-globe-trademark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abstract-background-design-background-design-free-photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstract-background-design-background-design-free-photo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="656500c0716f0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\656500c0716f0.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo_cine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_cine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="james-lee-YpDkIh137ws-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\james-lee-YpDkIh137ws-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

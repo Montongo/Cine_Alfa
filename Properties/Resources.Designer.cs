@@ -113,16 +113,6 @@ namespace Cine_Alfa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_cine {
-            get {
-                object obj = ResourceManager.GetObject("Logo_cine", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap png_clipart_ares_galaxy_mobile_app_android_application_package_peer_to_peer_android_globe_trademark {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-ares-galaxy-mobile-app-android-application-package-peer-to-peer-andro" +
