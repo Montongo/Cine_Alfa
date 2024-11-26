@@ -37,6 +37,9 @@
             button1 = new Button();
             button2 = new Button();
             panel1 = new Panel();
+            linkLabel1 = new LinkLabel();
+            label5 = new Label();
+            create_cuen = new Button();
             label4 = new Label();
             label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -48,10 +51,10 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-18, -11);
+            pictureBox1.Location = new Point(-17, 196);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(282, 244);
+            pictureBox1.Size = new Size(278, 282);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -59,10 +62,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ControlText;
+            label1.BackColor = Color.Orange;
             label1.Font = new Font("Impact", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(399, 291);
+            label1.Location = new Point(318, 275);
             label1.Name = "label1";
             label1.Size = new Size(86, 28);
             label1.TabIndex = 1;
@@ -73,10 +76,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ControlText;
+            label2.BackColor = Color.Orange;
             label2.Font = new Font("Impact", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(399, 371);
+            label2.Location = new Point(318, 357);
             label2.Name = "label2";
             label2.Size = new Size(128, 28);
             label2.TabIndex = 2;
@@ -85,7 +88,7 @@
             // 
             // Ingresa_usuario
             // 
-            Ingresa_usuario.Location = new Point(557, 295);
+            Ingresa_usuario.Location = new Point(517, 275);
             Ingresa_usuario.Margin = new Padding(3, 4, 3, 4);
             Ingresa_usuario.Name = "Ingresa_usuario";
             Ingresa_usuario.Size = new Size(230, 27);
@@ -94,7 +97,7 @@
             // 
             // Ingresa_password
             // 
-            Ingresa_password.Location = new Point(557, 375);
+            Ingresa_password.Location = new Point(517, 358);
             Ingresa_password.Margin = new Padding(3, 4, 3, 4);
             Ingresa_password.Name = "Ingresa_password";
             Ingresa_password.Size = new Size(228, 27);
@@ -104,7 +107,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(599, 492);
+            button1.Location = new Point(576, 431);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
@@ -116,7 +119,7 @@
             // button2
             // 
             button2.BackColor = SystemColors.ScrollBar;
-            button2.Location = new Point(34, 631);
+            button2.Location = new Point(27, 657);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(202, 29);
@@ -128,28 +131,67 @@
             // panel1
             // 
             panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(create_cuen);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(Ingresa_password);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(Ingresa_usuario);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(-4, 0);
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1265, 676);
+            panel1.Size = new Size(1261, 714);
             panel1.TabIndex = 7;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = Color.Yellow;
+            linkLabel1.Location = new Point(547, 511);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(149, 20);
+            linkLabel1.TabIndex = 9;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Olvide mi contraseña";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Consolas", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.ButtonFace;
+            label5.Location = new Point(528, 579);
+            label5.Name = "label5";
+            label5.Size = new Size(190, 22);
+            label5.TabIndex = 8;
+            label5.Text = "¿No tienes cuenta?";
+            // 
+            // create_cuen
+            // 
+            create_cuen.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            create_cuen.Location = new Point(554, 632);
+            create_cuen.Name = "create_cuen";
+            create_cuen.Size = new Size(142, 45);
+            create_cuen.TabIndex = 7;
+            create_cuen.Text = "Crear cuenta";
+            create_cuen.UseVisualStyleBackColor = true;
+            create_cuen.Click += button3_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(293, 156);
+            label4.Location = new Point(210, 133);
             label4.Name = "label4";
-            label4.Size = new Size(494, 115);
+            label4.Size = new Size(659, 138);
             label4.TabIndex = 2;
-            label4.Text = "Ingresa tu nombre de usuario y tu contraseña\r\ndespués dale al botón de continuar.\r\n\r\n\r\n\r\n";
+            label4.Text = "Ingresa tu nombre de usuario y tu contraseña, después dale \r\nal botón de continuar.\r\n\r\n\r\n\r\n\r\n";
             label4.TextAlign = ContentAlignment.TopCenter;
             label4.Click += label4_Click;
             // 
@@ -158,7 +200,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(494, 53);
+            label3.Location = new Point(424, 52);
             label3.Name = "label3";
             label3.Size = new Size(176, 29);
             label3.TabIndex = 1;
@@ -168,13 +210,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1064, 673);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(1064, 714);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             SizeGripStyle = SizeGripStyle.Show;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -195,5 +236,8 @@
         private Panel panel1;
         private Label label4;
         private Label label3;
+        private LinkLabel linkLabel1;
+        private Label label5;
+        private Button create_cuen;
     }
 }

@@ -23,34 +23,11 @@ namespace Cine_Alfa
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            CargarDatos();
+            
             
         }
 
-        private void CargarDatos()
-        {
-            try
-            {
-                string query = "SELECT * FROM Pelicula";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                DataTable table = new DataTable();
-                connection.Open();
-                adapter.Fill(table);
-                dataGridView1.DataSource = table;
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
-            }
-            finally
-            {
-                if (connection.State == ConnectionState.Open)
-                {
-                    connection.Close();
-                }
-            }
-        }
+       
        
 
         private void label1_Click(object sender, EventArgs e)
