@@ -23,34 +23,14 @@ namespace Cine_Alfa
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            CargarDatos();
-        }
-        private void CargarDatos()
-        {
-            try
-            {
-                string query = "SELECT * FROM Pelicula";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                DataTable table = new DataTable();
-                connection.Open();
-                adapter.Fill(table);
-                dataGridView1.DataSource = table;
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
-            }
-            finally
-            {
-                if (connection.State == ConnectionState.Open)
-                {
-                    connection.Close();
-                }
-            }
+            
+            
         }
 
-                private void label1_Click(object sender, EventArgs e)
+       
+       
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -93,10 +73,32 @@ namespace Cine_Alfa
             Form3 fe = new Form3();
             fe.Show();
             this.Hide();
-           
+
         }
-      
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void atras2_Click(object sender, EventArgs e)
+        {
+            Form1 c = new Form1();
+            c.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
