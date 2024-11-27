@@ -35,8 +35,8 @@ namespace Cine_Alfa
 
         private void atras3_Click(object sender, EventArgs e)
         {
-            Form2 de = new Form2();
-            de.Show();
+            Catalogo ca = new Catalogo();
+            ca.Show();
             this.Hide();
 
         }
