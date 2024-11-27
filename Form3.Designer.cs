@@ -155,9 +155,9 @@
             pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
             pictureBox1.Image = Properties.Resources.Logo_cine;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(-16, 0);
+            pictureBox1.Location = new Point(3, 31);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(289, 254);
+            pictureBox1.Size = new Size(294, 257);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
@@ -166,6 +166,7 @@
             // panel1
             // 
             panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(tercera);
@@ -177,7 +178,6 @@
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label1);
