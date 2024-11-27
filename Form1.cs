@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Cine_Alfa
 {
     public partial class Form1 : Form
     {
-        private SqlConnection connection = new SqlConnection("Data source= E\\SQLPRACTICE; Initial Catalog= Alfa_cine; User ID =sa; Password=12345678;Encrypt=False ");
+
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace Cine_Alfa
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Conexion c = new Conexion();
+
 
 
         }
@@ -43,9 +44,18 @@ namespace Cine_Alfa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Catalogo ca = new Catalogo();
-            ca.Show();
-            this.Hide();
+
+            if (string.IsNullOrWhiteSpace(Ingresa_usuario.Text) && string.IsNullOrWhiteSpace(Ingresa_password.Text))
+            {
+                MessageBox.Show("llena todos los datos solicitados");
+            }
+
+            else
+            {
+                verificar_user veri = new verificar_user();
+                veri.verificar(Ingresa_usuario.Text, Ingresa_password.Text);
+            }
+
 
         }
 
@@ -61,9 +71,18 @@ namespace Cine_Alfa
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
+            new_user panta_nuevo_usuario = new new_user();
+            panta_nuevo_usuario.Show();
+            this.Hide();
+            
+        }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            restore_contra restore = new restore_contra();
+            restore.Show();
         }
     }
 }
