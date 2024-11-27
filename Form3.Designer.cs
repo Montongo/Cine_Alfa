@@ -70,7 +70,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Candara", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(397, 162);
+            label2.Location = new Point(397, 169);
             label2.Name = "label2";
             label2.Size = new Size(105, 37);
             label2.TabIndex = 1;
