@@ -42,5 +42,10 @@ namespace Cine_Alfa
                 }
             }
         }
+
+        private void new_user_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

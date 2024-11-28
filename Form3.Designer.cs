@@ -33,13 +33,13 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            button1 = new Button();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            atras3 = new Button();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             button7 = new Button();
             button6 = new Button();
             tercera = new Label();
@@ -51,6 +51,8 @@
             button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -96,17 +98,6 @@
             label4.TabIndex = 3;
             label4.Text = "Tercera edad";
             // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(928, 549);
-            button1.Name = "button1";
-            button1.Size = new Size(142, 52);
-            button1.TabIndex = 7;
-            button1.Text = "Aceptar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -138,22 +129,10 @@
             label7.TabIndex = 10;
             label7.Text = "$60";
             // 
-            // atras3
-            // 
-            atras3.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            atras3.Location = new Point(45, 587);
-            atras3.Name = "atras3";
-            atras3.Size = new Size(136, 52);
-            atras3.TabIndex = 11;
-            atras3.Text = "Atras";
-            atras3.UseVisualStyleBackColor = true;
-            atras3.Click += atras3_Click;
-            // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
-            pictureBox1.Image = Properties.Resources.Logo_cine;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
             pictureBox1.Location = new Point(-16, 0);
             pictureBox1.Name = "pictureBox1";
@@ -166,6 +145,8 @@
             // panel1
             // 
             panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(tercera);
@@ -175,7 +156,6 @@
             panel1.Controls.Add(adulto);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label5);
@@ -188,6 +168,30 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1137, 667);
             panel1.TabIndex = 13;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = Properties.Resources.next;
+            pictureBox3.Location = new Point(995, 573);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(139, 91);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = Properties.Resources.regresar1;
+            pictureBox2.Location = new Point(0, 573);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(139, 91);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // button7
             // 
@@ -314,7 +318,6 @@
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1136, 667);
-            Controls.Add(atras3);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Form3";
@@ -323,6 +326,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -332,11 +337,9 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Button button1;
         private Label label5;
         private Label label6;
         private Label label7;
-        private Button atras3;
         private PictureBox pictureBox1;
         private Panel panel1;
         private Label adulto;
@@ -348,5 +351,7 @@
         private Label infante;
         private Button button5;
         private Button button4;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

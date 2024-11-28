@@ -182,7 +182,6 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Logo_cine;
             pictureBox1.Location = new Point(3, 21);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(226, 205);
@@ -198,6 +197,7 @@
             Controls.Add(panel1);
             Name = "new_user";
             Text = "new_user";
+            Load += new_user_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

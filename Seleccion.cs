@@ -17,18 +17,21 @@ namespace Cine_Alfa
             InitializeComponent();
         }
 
-        private void button37_Click(object sender, EventArgs e)
-        {
-            Form4 set = new Form4();
-            set.Show();
-            this.Hide();
+       
 
-        }
+       
 
-        private void atras3_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             Form3 setr = new Form3();
             setr.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form4 set = new Form4();
+            set.Show();
             this.Hide();
         }
     }

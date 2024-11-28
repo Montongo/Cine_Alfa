@@ -69,8 +69,6 @@
             button35 = new Button();
             button36 = new Button();
             pictureBox2 = new PictureBox();
-            atras3 = new Button();
-            button37 = new Button();
             label3 = new Label();
             elegido = new Label();
             label5 = new Label();
@@ -80,8 +78,12 @@
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -89,7 +91,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(586, 257);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(591, 396);
+            pictureBox1.Size = new Size(591, 412);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -448,28 +450,6 @@
             pictureBox2.TabIndex = 39;
             pictureBox2.TabStop = false;
             // 
-            // atras3
-            // 
-            atras3.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            atras3.Location = new Point(12, 653);
-            atras3.Name = "atras3";
-            atras3.Size = new Size(136, 52);
-            atras3.TabIndex = 40;
-            atras3.Text = "Atras";
-            atras3.UseVisualStyleBackColor = true;
-            atras3.Click += atras3_Click;
-            // 
-            // button37
-            // 
-            button37.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button37.Location = new Point(1078, 653);
-            button37.Name = "button37";
-            button37.Size = new Size(142, 52);
-            button37.TabIndex = 41;
-            button37.Text = "Aceptar";
-            button37.UseVisualStyleBackColor = true;
-            button37.Click += button37_Click;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -565,12 +545,38 @@
             label10.TabIndex = 50;
             label10.Text = "No seleccionable";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = Properties.Resources.regresar1;
+            pictureBox3.Location = new Point(0, 675);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(139, 91);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 51;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Image = Properties.Resources.next;
+            pictureBox4.Location = new Point(1092, 675);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(139, 91);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 52;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
             // Seleccion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1232, 717);
+            ClientSize = new Size(1232, 770);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
@@ -580,8 +586,6 @@
             Controls.Add(label5);
             Controls.Add(elegido);
             Controls.Add(label3);
-            Controls.Add(button37);
-            Controls.Add(atras3);
             Controls.Add(pictureBox2);
             Controls.Add(button36);
             Controls.Add(button35);
@@ -626,6 +630,8 @@
             Text = "pi";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -672,8 +678,6 @@
         private Button button35;
         private Button button36;
         private PictureBox pictureBox2;
-        private Button atras3;
-        private Button button37;
         private Label label3;
         private Label elegido;
         private Label label5;
@@ -683,5 +687,7 @@
         private Label label8;
         private Label label9;
         private Label label10;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }

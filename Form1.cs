@@ -65,5 +65,19 @@ namespace Cine_Alfa
         {
 
         }
+
+        private void create_cuen_Click(object sender, EventArgs e)
+        {
+            new_user panata_nuevo_usuario = new new_user();
+            panata_nuevo_usuario.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            restore_contra rest_con = new restore_contra();
+            rest_con.Show();
+            this.Hide();
+        }
     }
 }

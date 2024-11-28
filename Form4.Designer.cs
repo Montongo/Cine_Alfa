@@ -50,8 +50,9 @@
             label15 = new Label();
             label16 = new Label();
             label17 = new Label();
-            button2 = new Button();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -246,17 +247,17 @@
             label17.Size = new Size(326, 31);
             label17.TabIndex = 25;
             // 
-            // button2
+            // pictureBox3
             // 
-            button2.BackColor = SystemColors.ActiveCaption;
-            button2.Font = new Font("Candara", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(26, 541);
-            button2.Name = "button2";
-            button2.Size = new Size(185, 78);
-            button2.TabIndex = 26;
-            button2.Text = "Atras";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = Properties.Resources.regresar1;
+            pictureBox3.Location = new Point(12, 563);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(148, 98);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 52;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // Form4
             // 
@@ -264,7 +265,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1262, 673);
-            Controls.Add(button2);
+            Controls.Add(pictureBox3);
             Controls.Add(label17);
             Controls.Add(label16);
             Controls.Add(label15);
@@ -290,6 +291,7 @@
             Text = "Form4";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -317,6 +319,6 @@
         private Label label15;
         private Label label16;
         private Label label17;
-        private Button button2;
+        private PictureBox pictureBox3;
     }
 }

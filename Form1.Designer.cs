@@ -181,7 +181,7 @@
             create_cuen.TabIndex = 7;
             create_cuen.Text = "Crear cuenta";
             create_cuen.UseVisualStyleBackColor = true;
-            create_cuen.Click += button3_Click;
+            create_cuen.Click += create_cuen_Click;
             // 
             // label4
             // 

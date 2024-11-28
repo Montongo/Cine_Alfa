@@ -24,7 +24,9 @@ namespace Cine_Alfa
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Seleccion re = new Seleccion();
+            re.Show();
+            this.Hide();
 
         }
 
@@ -117,6 +119,20 @@ namespace Cine_Alfa
                 n3 = n3 - 1;
                 tercera.Text = n3.ToString();
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Seleccion re = new Seleccion();
+            re.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Catalogo ca = new Catalogo();
+            ca.Show();
+            this.Hide();
         }
     }
 }
