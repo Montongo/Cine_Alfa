@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -36,7 +35,6 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            pictureBox1 = new PictureBox();
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -49,7 +47,6 @@
             adulto = new Label();
             button3 = new Button();
             button2 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -72,6 +69,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Candara", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(397, 169);
             label2.Name = "label2";
             label2.Size = new Size(105, 37);
@@ -82,6 +80,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Candara", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(391, 251);
             label3.Name = "label3";
             label3.Size = new Size(111, 37);
@@ -92,6 +91,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Candara", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(343, 356);
             label4.Name = "label4";
             label4.Size = new Size(184, 37);
@@ -102,6 +102,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.ButtonHighlight;
             label5.Location = new Point(573, 171);
             label5.Name = "label5";
             label5.Size = new Size(42, 25);
@@ -113,6 +114,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(573, 260);
             label6.Name = "label6";
             label6.Size = new Size(42, 25);
@@ -123,24 +125,12 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Location = new Point(573, 359);
             label7.Name = "label7";
             label7.Size = new Size(42, 25);
             label7.TabIndex = 10;
             label7.Text = "$60";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
-            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(-16, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(289, 254);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel1
             // 
@@ -157,7 +147,6 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label1);
@@ -184,7 +173,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = Properties.Resources.regresar1;
+            pictureBox2.Image = Properties.Resources.regresar;
             pictureBox2.Location = new Point(0, 573);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(139, 91);
@@ -323,7 +312,6 @@
             Name = "Form3";
             Text = "Form3";
             Load += Form3_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -340,7 +328,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private PictureBox pictureBox1;
         private Panel panel1;
         private Label adulto;
         private Button button3;

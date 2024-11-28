@@ -43,7 +43,6 @@
             pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
             pictureBox14 = new PictureBox();
-            bt14 = new Button();
             pictureBox15 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -230,24 +229,10 @@
             pictureBox14.TabStop = false;
             pictureBox14.Click += pictureBox14_Click;
             // 
-            // bt14
-            // 
-            bt14.BackColor = Color.White;
-            bt14.ForeColor = Color.RosyBrown;
-            bt14.Image = (Image)resources.GetObject("bt14.Image");
-            bt14.Location = new Point(1703, 583);
-            bt14.Name = "bt14";
-            bt14.RightToLeft = RightToLeft.Yes;
-            bt14.Size = new Size(45, 34);
-            bt14.TabIndex = 24;
-            bt14.TextAlign = ContentAlignment.TopLeft;
-            bt14.UseVisualStyleBackColor = false;
-            bt14.Click += bt14_Click;
-            // 
             // pictureBox15
             // 
             pictureBox15.BackColor = Color.Transparent;
-            pictureBox15.Image = Properties.Resources.regresar;
+            pictureBox15.Image = Properties.Resources.regresar1;
             pictureBox15.Location = new Point(0, 801);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(194, 132);
@@ -264,7 +249,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1881, 900);
             Controls.Add(pictureBox15);
-            Controls.Add(bt14);
             Controls.Add(pictureBox14);
             Controls.Add(pictureBox13);
             Controls.Add(pictureBox12);
@@ -316,7 +300,6 @@
         private PictureBox pictureBox12;
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
-        private Button bt14;
         private PictureBox pictureBox15;
     }
 }
