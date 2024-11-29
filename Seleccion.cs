@@ -17,9 +17,9 @@ namespace Cine_Alfa
             InitializeComponent();
         }
 
-       
 
-       
+
+
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -33,6 +33,11 @@ namespace Cine_Alfa
             Form4 set = new Form4();
             set.Show();
             this.Hide();
+        }
+
+        private void Seleccion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -68,10 +68,8 @@
             button34 = new Button();
             button35 = new Button();
             button36 = new Button();
-            pictureBox2 = new PictureBox();
             label3 = new Label();
             elegido = new Label();
-            label5 = new Label();
             label6 = new Label();
             button38 = new Button();
             label7 = new Label();
@@ -80,10 +78,17 @@
             label10 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            label4 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            pictureBox5 = new PictureBox();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -440,24 +445,15 @@
             button36.TabIndex = 38;
             button36.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-11, -38);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(264, 225);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 39;
-            pictureBox2.TabStop = false;
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.ActiveCaption;
-            label3.Font = new Font("Impact", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(12, 161);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(29, 218);
             label3.Name = "label3";
-            label3.Size = new Size(324, 45);
+            label3.Size = new Size(294, 34);
             label3.TabIndex = 42;
             label3.Text = "Boletos Adquiridos";
             // 
@@ -466,22 +462,11 @@
             elegido.AutoSize = true;
             elegido.Font = new Font("Candara", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             elegido.ForeColor = Color.Lime;
-            elegido.Location = new Point(94, 222);
+            elegido.Location = new Point(134, 300);
             elegido.Name = "elegido";
             elegido.Size = new Size(73, 37);
             elegido.TabIndex = 43;
             elegido.Text = "-------";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = SystemColors.ActiveCaption;
-            label5.Font = new Font("Impact", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(94, 344);
-            label5.Name = "label5";
-            label5.Size = new Size(141, 45);
-            label5.TabIndex = 44;
-            label5.Text = "Asiento";
             // 
             // label6
             // 
@@ -569,12 +554,82 @@
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.ErrorImage = (Image)resources.GetObject("pictureBox2.ErrorImage");
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
+            pictureBox2.Location = new Point(-7, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(152, 142);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 53;
+            pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(408, 147);
+            label4.Name = "label4";
+            label4.Size = new Size(136, 20);
+            label4.TabIndex = 57;
+            label4.Text = "Cine: San francisco ";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(408, 108);
+            label11.Name = "label11";
+            label11.Size = new Size(136, 20);
+            label11.TabIndex = 56;
+            label11.Text = "Cine: San francisco ";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Consolas", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.ForeColor = SystemColors.ButtonFace;
+            label12.Location = new Point(408, 58);
+            label12.Name = "label12";
+            label12.Size = new Size(210, 22);
+            label12.TabIndex = 55;
+            label12.Text = "Cine: San francisco ";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Location = new Point(168, 14);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(136, 173);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 54;
+            pictureBox5.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label5.Location = new Point(97, 375);
+            label5.Name = "label5";
+            label5.Size = new Size(142, 34);
+            label5.TabIndex = 58;
+            label5.Text = "Asientos";
+            // 
             // Seleccion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
+            BackgroundImage = Properties.Resources.vecteezy_graphic_design_blue_color_tone_for_wallpaper_background_7213350;
             ClientSize = new Size(1232, 770);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label11);
+            Controls.Add(label12);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(label10);
@@ -583,10 +638,8 @@
             Controls.Add(label7);
             Controls.Add(button38);
             Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(elegido);
             Controls.Add(label3);
-            Controls.Add(pictureBox2);
             Controls.Add(button36);
             Controls.Add(button35);
             Controls.Add(button34);
@@ -627,11 +680,14 @@
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "Seleccion";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "pi";
+            Load += Seleccion_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -677,10 +733,8 @@
         private Button button34;
         private Button button35;
         private Button button36;
-        private PictureBox pictureBox2;
         private Label label3;
         private Label elegido;
-        private Label label5;
         private Label label6;
         private Button button38;
         private Label label7;
@@ -689,5 +743,11 @@
         private Label label10;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private PictureBox pictureBox2;
+        private Label label4;
+        private Label label11;
+        private Label label12;
+        private PictureBox pictureBox5;
+        private Label label5;
     }
 }

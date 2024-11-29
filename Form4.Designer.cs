@@ -42,7 +42,6 @@
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
-            pictureBox1 = new PictureBox();
             button1 = new Button();
             label13 = new Label();
             textBox1 = new TextBox();
@@ -51,8 +50,13 @@
             label16 = new Label();
             label17 = new Label();
             pictureBox3 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -60,7 +64,7 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(1063, 9);
+            label1.Location = new Point(974, 21);
             label1.Name = "label1";
             label1.Size = new Size(168, 57);
             label1.TabIndex = 0;
@@ -70,7 +74,7 @@
             // 
             Cine.AutoSize = true;
             Cine.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Cine.Location = new Point(972, 98);
+            Cine.Location = new Point(883, 110);
             Cine.Name = "Cine";
             Cine.Size = new Size(59, 31);
             Cine.TabIndex = 1;
@@ -80,7 +84,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(972, 172);
+            label2.Location = new Point(883, 184);
             label2.Name = "label2";
             label2.Size = new Size(49, 31);
             label2.TabIndex = 2;
@@ -90,7 +94,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(972, 249);
+            label3.Location = new Point(883, 261);
             label3.Name = "label3";
             label3.Size = new Size(66, 31);
             label3.TabIndex = 3;
@@ -100,7 +104,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(972, 327);
+            label4.Location = new Point(883, 339);
             label4.Name = "label4";
             label4.Size = new Size(92, 31);
             label4.TabIndex = 4;
@@ -110,7 +114,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(972, 418);
+            label5.Location = new Point(883, 430);
             label5.Name = "label5";
             label5.Size = new Size(92, 31);
             label5.TabIndex = 5;
@@ -120,7 +124,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(972, 499);
+            label6.Location = new Point(883, 511);
             label6.Name = "label6";
             label6.Size = new Size(65, 31);
             label6.TabIndex = 6;
@@ -129,56 +133,45 @@
             // 
             // label12
             // 
-            label12.Location = new Point(1083, 499);
+            label12.Location = new Point(994, 511);
             label12.Name = "label12";
             label12.Size = new Size(137, 31);
             label12.TabIndex = 12;
             // 
             // label7
             // 
-            label7.Location = new Point(1103, 418);
+            label7.Location = new Point(1014, 430);
             label7.Name = "label7";
             label7.Size = new Size(137, 31);
             label7.TabIndex = 13;
             // 
             // label8
             // 
-            label8.Location = new Point(1103, 327);
+            label8.Location = new Point(1014, 339);
             label8.Name = "label8";
             label8.Size = new Size(137, 31);
             label8.TabIndex = 14;
             // 
             // label9
             // 
-            label9.Location = new Point(1103, 249);
+            label9.Location = new Point(1014, 261);
             label9.Name = "label9";
             label9.Size = new Size(137, 31);
             label9.TabIndex = 15;
             // 
             // label10
             // 
-            label10.Location = new Point(1094, 172);
+            label10.Location = new Point(1005, 184);
             label10.Name = "label10";
             label10.Size = new Size(137, 31);
             label10.TabIndex = 16;
             // 
             // label11
             // 
-            label11.Location = new Point(1094, 98);
+            label11.Location = new Point(1005, 110);
             label11.Name = "label11";
             label11.Size = new Size(137, 31);
             label11.TabIndex = 17;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-20, -46);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(337, 307);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 18;
-            pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -196,10 +189,10 @@
             // 
             label13.AutoSize = true;
             label13.BackColor = SystemColors.ActiveCaption;
-            label13.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.Location = new Point(312, 66);
             label13.Name = "label13";
-            label13.Size = new Size(401, 35);
+            label13.Size = new Size(466, 34);
             label13.TabIndex = 20;
             label13.Text = "Ingrese la cantidad en efectivo";
             // 
@@ -214,10 +207,10 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = SystemColors.ActiveCaption;
-            label14.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label14.Location = new Point(312, 237);
             label14.Name = "label14";
-            label14.Size = new Size(205, 35);
+            label14.Size = new Size(241, 34);
             label14.TabIndex = 22;
             label14.Text = "Su cantidad es:";
             // 
@@ -233,10 +226,10 @@
             // 
             label16.AutoSize = true;
             label16.BackColor = SystemColors.ActiveCaption;
-            label16.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label16.Location = new Point(312, 389);
             label16.Name = "label16";
-            label16.Size = new Size(186, 35);
+            label16.Size = new Size(220, 34);
             label16.TabIndex = 24;
             label16.Text = "Su cambio es:";
             // 
@@ -251,7 +244,7 @@
             // 
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = Properties.Resources.regresar1;
-            pictureBox3.Location = new Point(12, 563);
+            pictureBox3.Location = new Point(12, 594);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(148, 98);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -259,12 +252,50 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = Properties.Resources.REINICIAR;
+            pictureBox2.Location = new Point(974, 609);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(108, 73);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 53;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Image = Properties.Resources.SALIR;
+            pictureBox4.Location = new Point(1081, 594);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(148, 98);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 54;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(186, 154);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 55;
+            pictureBox1.TabStop = false;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1262, 673);
+            BackgroundImage = Properties.Resources.vecteezy_graphic_design_blue_color_tone_for_wallpaper_background_7213350;
+            ClientSize = new Size(1232, 770);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Controls.Add(label17);
             Controls.Add(label16);
@@ -273,7 +304,6 @@
             Controls.Add(textBox1);
             Controls.Add(label13);
             Controls.Add(button1);
-            Controls.Add(pictureBox1);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -288,10 +318,13 @@
             Controls.Add(Cine);
             Controls.Add(label1);
             Name = "Form4";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form4";
             Load += Form4_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -311,7 +344,6 @@
         private Label label9;
         private Label label10;
         private Label label11;
-        private PictureBox pictureBox1;
         private Button button1;
         private Label label13;
         private TextBox textBox1;
@@ -320,5 +352,8 @@
         private Label label16;
         private Label label17;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox1;
     }
 }
