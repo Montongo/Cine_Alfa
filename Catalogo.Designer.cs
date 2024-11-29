@@ -232,7 +232,7 @@
             // pictureBox15
             // 
             pictureBox15.BackColor = Color.Transparent;
-            pictureBox15.Image = Properties.Resources.regresar;
+            pictureBox15.Image = Properties.Resources.regresar1;
             pictureBox15.Location = new Point(0, 801);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(194, 132);

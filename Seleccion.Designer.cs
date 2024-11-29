@@ -548,7 +548,7 @@
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.Image = Properties.Resources.regresar1;
+            pictureBox3.Image = Properties.Resources.regresar;
             pictureBox3.Location = new Point(0, 675);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(139, 91);
