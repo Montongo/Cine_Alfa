@@ -373,6 +373,16 @@ namespace Cine_Alfa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_11_29_001728 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-11-29 001728", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2024_11_29_020526 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2024-11-29 020526", resourceCulture);
