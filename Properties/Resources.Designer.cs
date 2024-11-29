@@ -373,6 +373,16 @@ namespace Cine_Alfa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_11_29_020526 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-11-29 020526", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FON {
             get {
                 object obj = ResourceManager.GetObject("FON", resourceCulture);
@@ -447,6 +457,16 @@ namespace Cine_Alfa.Properties {
         internal static System.Drawing.Bitmap SALIR {
             get {
                 object obj = ResourceManager.GetObject("SALIR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap USUA {
+            get {
+                object obj = ResourceManager.GetObject("USUA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -34,7 +34,7 @@ namespace Cine_Alfa
 
         private void button2_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -46,6 +46,18 @@ namespace Cine_Alfa
         {
             Seleccion re = new Seleccion();
             re.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
             this.Hide();
         }
     }
