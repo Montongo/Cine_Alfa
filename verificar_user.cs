@@ -34,8 +34,8 @@ namespace Cine_Alfa
                         if (dt.Rows.Count > 0)
                         {
                             MessageBox.Show("Bienvenido(a) " + usuario);
-                            Form2 panta2 = new Form2();
-                            panta2.Show();
+                            Catalogo ca = new Catalogo();
+                            ca.Show();
                             Form1 panta1 = new Form1();
                             panta1.Close();
 

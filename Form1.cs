@@ -21,7 +21,7 @@ namespace Cine_Alfa
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Conexion c = new Conexion();
+            
 
 
         }
@@ -43,9 +43,20 @@ namespace Cine_Alfa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Catalogo ca = new Catalogo();
-            ca.Show();
-            this.Hide();
+            
+            if(string.IsNullOrWhiteSpace(Ingresa_usuario.Text) || string.IsNullOrWhiteSpace(Ingresa_password.Text))
+            {
+                MessageBox.Show("Ingresa todos los datos");
+            }
+
+            else
+            {
+                verificar_user veri = new verificar_user();
+                veri.verificar(Ingresa_usuario.Text, Ingresa_password.Text);
+                
+                
+            }
+                
 
         }
 
@@ -64,6 +75,20 @@ namespace Cine_Alfa
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void create_cuen_Click(object sender, EventArgs e)
+        {
+            new_user panata_nuevo_usuario = new new_user();
+            panata_nuevo_usuario.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            restore_contra rest_con = new restore_contra();
+            rest_con.Show();
+            this.Hide();
         }
     }
 }

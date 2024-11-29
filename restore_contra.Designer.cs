@@ -163,7 +163,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.Logo_cine;
+       
             pictureBox2.Location = new Point(-23, 297);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(219, 194);

@@ -43,20 +43,7 @@
             pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
             pictureBox14 = new PictureBox();
-            bt1 = new Button();
-            bt12 = new Button();
-            bt11 = new Button();
-            bt10 = new Button();
-            bt9 = new Button();
-            bt8 = new Button();
-            bt5 = new Button();
-            bt4 = new Button();
-            bt3 = new Button();
-            bt2 = new Button();
-            bt14 = new Button();
-            bt13 = new Button();
-            bt7 = new Button();
-            bt6 = new Button();
+            pictureBox15 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -71,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -83,6 +71,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -94,6 +83,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
@@ -105,6 +95,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 
@@ -116,6 +107,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
@@ -127,6 +119,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox6
             // 
@@ -135,9 +128,10 @@
             pictureBox6.Location = new Point(797, 12);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(268, 399);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 5;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox7
             // 
@@ -149,6 +143,7 @@
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 6;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // pictureBox8
             // 
@@ -157,9 +152,10 @@
             pictureBox8.Location = new Point(797, 407);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(268, 399);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 7;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // pictureBox9
             // 
@@ -168,9 +164,10 @@
             pictureBox9.Location = new Point(1061, 12);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(268, 399);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 8;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
             // 
             // pictureBox10
             // 
@@ -182,6 +179,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox10.TabIndex = 9;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
             // 
             // pictureBox11
             // 
@@ -193,6 +191,7 @@
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox11.TabIndex = 10;
             pictureBox11.TabStop = false;
+            pictureBox11.Click += pictureBox11_Click;
             // 
             // pictureBox12
             // 
@@ -204,6 +203,7 @@
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 11;
             pictureBox12.TabStop = false;
+            pictureBox12.Click += pictureBox12_Click;
             // 
             // pictureBox13
             // 
@@ -215,6 +215,7 @@
             pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox13.TabIndex = 12;
             pictureBox13.TabStop = false;
+            pictureBox13.Click += pictureBox13_Click;
             // 
             // pictureBox14
             // 
@@ -226,202 +227,19 @@
             pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox14.TabIndex = 13;
             pictureBox14.TabStop = false;
+            pictureBox14.Click += pictureBox14_Click;
             // 
-            // bt1
+            // pictureBox15
             // 
-            bt1.BackColor = Color.White;
-            bt1.ForeColor = Color.RosyBrown;
-            bt1.Image = (Image)resources.GetObject("bt1.Image");
-            bt1.Location = new Point(123, 188);
-            bt1.Name = "bt1";
-            bt1.RightToLeft = RightToLeft.Yes;
-            bt1.Size = new Size(45, 34);
-            bt1.TabIndex = 14;
-            bt1.TextAlign = ContentAlignment.TopLeft;
-            bt1.UseVisualStyleBackColor = false;
-            bt1.Click += bt1_Click;
-            // 
-            // bt12
-            // 
-            bt12.BackColor = Color.White;
-            bt12.ForeColor = Color.RosyBrown;
-            bt12.Image = (Image)resources.GetObject("bt12.Image");
-            bt12.Location = new Point(1180, 583);
-            bt12.Name = "bt12";
-            bt12.RightToLeft = RightToLeft.Yes;
-            bt12.Size = new Size(45, 34);
-            bt12.TabIndex = 15;
-            bt12.TextAlign = ContentAlignment.TopLeft;
-            bt12.UseVisualStyleBackColor = false;
-            bt12.Click += bt12_Click;
-            // 
-            // bt11
-            // 
-            bt11.BackColor = Color.White;
-            bt11.ForeColor = Color.RosyBrown;
-            bt11.Image = (Image)resources.GetObject("bt11.Image");
-            bt11.Location = new Point(918, 583);
-            bt11.Name = "bt11";
-            bt11.RightToLeft = RightToLeft.Yes;
-            bt11.Size = new Size(45, 34);
-            bt11.TabIndex = 16;
-            bt11.TextAlign = ContentAlignment.TopLeft;
-            bt11.UseVisualStyleBackColor = false;
-            bt11.Click += bt11_Click;
-            // 
-            // bt10
-            // 
-            bt10.BackColor = Color.White;
-            bt10.ForeColor = Color.RosyBrown;
-            bt10.Image = (Image)resources.GetObject("bt10.Image");
-            bt10.Location = new Point(649, 583);
-            bt10.Name = "bt10";
-            bt10.RightToLeft = RightToLeft.Yes;
-            bt10.Size = new Size(45, 34);
-            bt10.TabIndex = 17;
-            bt10.TextAlign = ContentAlignment.TopLeft;
-            bt10.UseVisualStyleBackColor = false;
-            bt10.Click += bt10_Click;
-            // 
-            // bt9
-            // 
-            bt9.BackColor = Color.White;
-            bt9.ForeColor = Color.RosyBrown;
-            bt9.Image = (Image)resources.GetObject("bt9.Image");
-            bt9.Location = new Point(383, 583);
-            bt9.Name = "bt9";
-            bt9.RightToLeft = RightToLeft.Yes;
-            bt9.Size = new Size(45, 34);
-            bt9.TabIndex = 18;
-            bt9.TextAlign = ContentAlignment.TopLeft;
-            bt9.UseVisualStyleBackColor = false;
-            bt9.Click += bt9_Click;
-            // 
-            // bt8
-            // 
-            bt8.BackColor = Color.White;
-            bt8.ForeColor = Color.RosyBrown;
-            bt8.Image = (Image)resources.GetObject("bt8.Image");
-            bt8.Location = new Point(123, 583);
-            bt8.Name = "bt8";
-            bt8.RightToLeft = RightToLeft.Yes;
-            bt8.Size = new Size(45, 34);
-            bt8.TabIndex = 19;
-            bt8.TextAlign = ContentAlignment.TopLeft;
-            bt8.UseVisualStyleBackColor = false;
-            bt8.Click += bt8_Click;
-            // 
-            // bt5
-            // 
-            bt5.BackColor = Color.White;
-            bt5.ForeColor = Color.RosyBrown;
-            bt5.Image = (Image)resources.GetObject("bt5.Image");
-            bt5.Location = new Point(1180, 188);
-            bt5.Name = "bt5";
-            bt5.RightToLeft = RightToLeft.Yes;
-            bt5.Size = new Size(45, 34);
-            bt5.TabIndex = 20;
-            bt5.TextAlign = ContentAlignment.TopLeft;
-            bt5.UseVisualStyleBackColor = false;
-            bt5.Click += bt5_Click;
-            // 
-            // bt4
-            // 
-            bt4.BackColor = Color.White;
-            bt4.ForeColor = Color.RosyBrown;
-            bt4.Image = (Image)resources.GetObject("bt4.Image");
-            bt4.Location = new Point(903, 188);
-            bt4.Name = "bt4";
-            bt4.RightToLeft = RightToLeft.Yes;
-            bt4.Size = new Size(45, 34);
-            bt4.TabIndex = 21;
-            bt4.TextAlign = ContentAlignment.TopLeft;
-            bt4.UseVisualStyleBackColor = false;
-            bt4.Click += bt4_Click;
-            // 
-            // bt3
-            // 
-            bt3.BackColor = Color.White;
-            bt3.ForeColor = Color.RosyBrown;
-            bt3.Image = (Image)resources.GetObject("bt3.Image");
-            bt3.Location = new Point(649, 188);
-            bt3.Name = "bt3";
-            bt3.RightToLeft = RightToLeft.Yes;
-            bt3.Size = new Size(45, 34);
-            bt3.TabIndex = 22;
-            bt3.TextAlign = ContentAlignment.TopLeft;
-            bt3.UseVisualStyleBackColor = false;
-            bt3.Click += bt3_Click;
-            // 
-            // bt2
-            // 
-            bt2.BackColor = Color.White;
-            bt2.ForeColor = Color.RosyBrown;
-            bt2.Image = (Image)resources.GetObject("bt2.Image");
-            bt2.Location = new Point(383, 188);
-            bt2.Name = "bt2";
-            bt2.RightToLeft = RightToLeft.Yes;
-            bt2.Size = new Size(45, 34);
-            bt2.TabIndex = 23;
-            bt2.TextAlign = ContentAlignment.TopLeft;
-            bt2.UseVisualStyleBackColor = false;
-            bt2.Click += bt2_Click;
-            // 
-            // bt14
-            // 
-            bt14.BackColor = Color.White;
-            bt14.ForeColor = Color.RosyBrown;
-            bt14.Image = (Image)resources.GetObject("bt14.Image");
-            bt14.Location = new Point(1703, 583);
-            bt14.Name = "bt14";
-            bt14.RightToLeft = RightToLeft.Yes;
-            bt14.Size = new Size(45, 34);
-            bt14.TabIndex = 24;
-            bt14.TextAlign = ContentAlignment.TopLeft;
-            bt14.UseVisualStyleBackColor = false;
-            bt14.Click += bt14_Click;
-            // 
-            // bt13
-            // 
-            bt13.BackColor = Color.White;
-            bt13.ForeColor = Color.RosyBrown;
-            bt13.Image = (Image)resources.GetObject("bt13.Image");
-            bt13.Location = new Point(1435, 583);
-            bt13.Name = "bt13";
-            bt13.RightToLeft = RightToLeft.Yes;
-            bt13.Size = new Size(45, 34);
-            bt13.TabIndex = 25;
-            bt13.TextAlign = ContentAlignment.TopLeft;
-            bt13.UseVisualStyleBackColor = false;
-            bt13.Click += bt13_Click;
-            // 
-            // bt7
-            // 
-            bt7.BackColor = Color.White;
-            bt7.ForeColor = Color.RosyBrown;
-            bt7.Image = (Image)resources.GetObject("bt7.Image");
-            bt7.Location = new Point(1703, 188);
-            bt7.Name = "bt7";
-            bt7.RightToLeft = RightToLeft.Yes;
-            bt7.Size = new Size(45, 34);
-            bt7.TabIndex = 26;
-            bt7.TextAlign = ContentAlignment.TopLeft;
-            bt7.UseVisualStyleBackColor = false;
-            bt7.Click += bt7_Click;
-            // 
-            // bt6
-            // 
-            bt6.BackColor = Color.White;
-            bt6.ForeColor = Color.RosyBrown;
-            bt6.Image = (Image)resources.GetObject("bt6.Image");
-            bt6.Location = new Point(1435, 188);
-            bt6.Name = "bt6";
-            bt6.RightToLeft = RightToLeft.Yes;
-            bt6.Size = new Size(45, 34);
-            bt6.TabIndex = 27;
-            bt6.TextAlign = ContentAlignment.TopLeft;
-            bt6.UseVisualStyleBackColor = false;
-            bt6.Click += bt6_Click;
+            pictureBox15.BackColor = Color.Transparent;
+            pictureBox15.Image = Properties.Resources.regresar1;
+            pictureBox15.Location = new Point(0, 801);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(194, 132);
+            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox15.TabIndex = 28;
+            pictureBox15.TabStop = false;
+            pictureBox15.Click += pictureBox15_Click;
             // 
             // Catalogo
             // 
@@ -429,21 +247,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1881, 842);
-            Controls.Add(bt6);
-            Controls.Add(bt7);
-            Controls.Add(bt13);
-            Controls.Add(bt14);
-            Controls.Add(bt2);
-            Controls.Add(bt3);
-            Controls.Add(bt4);
-            Controls.Add(bt5);
-            Controls.Add(bt8);
-            Controls.Add(bt9);
-            Controls.Add(bt10);
-            Controls.Add(bt11);
-            Controls.Add(bt12);
-            Controls.Add(bt1);
+            ClientSize = new Size(1881, 900);
+            Controls.Add(pictureBox15);
             Controls.Add(pictureBox14);
             Controls.Add(pictureBox13);
             Controls.Add(pictureBox12);
@@ -459,6 +264,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "Catalogo";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Catalogo";
             Load += Catalogo_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -475,6 +281,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ResumeLayout(false);
         }
 
@@ -494,19 +301,6 @@
         private PictureBox pictureBox12;
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
-        private Button bt1;
-        private Button bt12;
-        private Button bt11;
-        private Button bt10;
-        private Button bt9;
-        private Button bt8;
-        private Button bt5;
-        private Button bt4;
-        private Button bt3;
-        private Button bt2;
-        private Button bt14;
-        private Button bt13;
-        private Button bt7;
-        private Button bt6;
+        private PictureBox pictureBox15;
     }
 }

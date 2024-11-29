@@ -34,14 +34,19 @@ namespace Cine_Alfa
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Seleccion re= new Seleccion();
-            re.Show();
-            this.Hide();
+         
         }
 
         private void Form4_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Seleccion re = new Seleccion();
+            re.Show();
+            this.Hide();
         }
     }
 }

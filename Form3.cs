@@ -24,7 +24,9 @@ namespace Cine_Alfa
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Seleccion re = new Seleccion();
+            re.Show();
+            this.Hide();
 
         }
 
@@ -51,9 +53,67 @@ namespace Cine_Alfa
 
         }
 
+        int op;
+        public void Poner_img(int op)
+        {
+            this.op = op;
+         
+            switch(op)
+            {
+                case 1:
+                    pictureBox4.Image = Image.FromFile(@"C:\Users\jorge\source\repos\Cine_Alfa2.1\Resources\end_game.jpg");
+                    break;
+                case 2:
+                    pictureBox4.Image = Properties.Resources._3;
+                    
+                    break;
+                case 3:
+                    pictureBox4.Image = Properties.Resources._4;
+                    break ;
+                case 4:
+                    pictureBox4.Image = Properties.Resources._5;
+                    
+                    break;
+                case 5:
+                    pictureBox4.Image = Properties.Resources._6;
+                    break ;
+                case 6:
+                    pictureBox4.Image = Properties.Resources._12;
+                    break ;
+                case 7:
+                    pictureBox4.Image = Properties.Resources._13;
+                    
+                    break ;
+                case 8:
+                    pictureBox4.Image = Properties.Resources._7;
+                    
+                    break ;
+                case 9:
+                    pictureBox4.Image = Properties.Resources._8;
+                    break ;
+                case 10:
+                    pictureBox4.Image = Properties.Resources._9;
+                    
+                    break ;
+                case 11:
+                    pictureBox4.Image = Properties.Resources._10;
+                    break ;
+                case 12:
+                    pictureBox4.Image = Properties.Resources._11;
+                    
+                    break ;
+                case 13:
+                    pictureBox4.Image = Properties.Resources._14;
+                    break ;
+                case 14:
+                    pictureBox4.Image = Properties.Resources._15;
+                    break ;
+            }
+        }
+
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            
 
         }
         int n = 0;
@@ -117,6 +177,20 @@ namespace Cine_Alfa
                 n3 = n3 - 1;
                 tercera.Text = n3.ToString();
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Seleccion re = new Seleccion();
+            re.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Horarios horarios = new Horarios();
+            horarios.Show();
+            this.Hide();
         }
     }
 }

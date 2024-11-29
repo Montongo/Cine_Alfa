@@ -393,9 +393,9 @@ namespace Cine_Alfa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_cine {
+        internal static System.Drawing.Bitmap next {
             get {
-                object obj = ResourceManager.GetObject("Logo_cine", resourceCulture);
+                object obj = ResourceManager.GetObject("next", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -407,6 +407,26 @@ namespace Cine_Alfa.Properties {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-ares-galaxy-mobile-app-android-application-package-peer-to-peer-andro" +
                         "id-globe-trademark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regresar {
+            get {
+                object obj = ResourceManager.GetObject("regresar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regresar1 {
+            get {
+                object obj = ResourceManager.GetObject("regresar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
