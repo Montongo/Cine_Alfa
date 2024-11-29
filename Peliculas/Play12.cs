@@ -19,8 +19,9 @@ namespace Cine_Alfa.Peliculas
 
         private void button37_Click(object sender, EventArgs e)
         {
-            Form3 setr = new Form3();
-            setr.Show();
+            Horarios horarios = new Horarios();
+            horarios.Show();
+            horarios.Poner_img(12);
             this.Hide();
         }
 

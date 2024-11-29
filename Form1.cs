@@ -21,7 +21,7 @@ namespace Cine_Alfa
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Conexion c = new Conexion();
+            
 
 
         }
@@ -43,9 +43,20 @@ namespace Cine_Alfa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Catalogo ca = new Catalogo();
-            ca.Show();
-            this.Hide();
+            
+            if(string.IsNullOrWhiteSpace(Ingresa_usuario.Text) || string.IsNullOrWhiteSpace(Ingresa_password.Text))
+            {
+                MessageBox.Show("Ingresa todos los datos");
+            }
+
+            else
+            {
+                verificar_user veri = new verificar_user();
+                veri.verificar(Ingresa_usuario.Text, Ingresa_password.Text);
+                
+                
+            }
+                
 
         }
 

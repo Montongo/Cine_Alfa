@@ -89,6 +89,7 @@ namespace Cine_Alfa
         {
             Play10 pl10 = new Play10();
             pl10.Show();
+            
             this.Hide();
         }
 
@@ -96,6 +97,7 @@ namespace Cine_Alfa
         {
             Play11 pl11 = new Play11();
             pl11.Show();
+            
             this.Hide();
         }
 
@@ -103,6 +105,7 @@ namespace Cine_Alfa
         {
             Play12 pl12 = new Play12();
             pl12.Show();
+            
             this.Hide();
         }
 
@@ -110,6 +113,7 @@ namespace Cine_Alfa
         {
             Play13 pl13 = new Play13();
             pl13.Show();
+            
             this.Hide();
         }
 
@@ -117,6 +121,7 @@ namespace Cine_Alfa
         {
             Play14 pl14 = new Play14();
             pl14.Show();
+            
             this.Hide();
         }
 
@@ -132,12 +137,14 @@ namespace Cine_Alfa
             Play1 pl1 = new Play1();
             pl1.Show();
             this.Hide();
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Play2 pl2 = new Play2();
             pl2.Show();
+   
             this.Hide();
         }
 
@@ -145,6 +152,7 @@ namespace Cine_Alfa
         {
             Play3 pl3 = new Play3();
             pl3.Show();
+            
             this.Hide();
         }
 
@@ -152,6 +160,7 @@ namespace Cine_Alfa
         {
             Play4 pl4 = new Play4();
             pl4.Show();
+            
             this.Hide();
         }
 
@@ -159,6 +168,7 @@ namespace Cine_Alfa
         {
             Play5 pl5 = new Play5();
             pl5.Show();
+            
             this.Hide();
 
         }
@@ -167,6 +177,7 @@ namespace Cine_Alfa
         {
             Play6 pl6 = new Play6();
             pl6.Show();
+           
             this.Hide();
         }
 
@@ -174,6 +185,7 @@ namespace Cine_Alfa
         {
             Play7 pl7 = new Play7();
             pl7.Show();
+            
             this.Hide();
         }
 
@@ -181,6 +193,7 @@ namespace Cine_Alfa
         {
             Play8 pl8 = new Play8();
             pl8.Show();
+            
             this.Hide();
         }
 
@@ -188,6 +201,7 @@ namespace Cine_Alfa
         {
             Play9 pl9 = new Play9();
             pl9.Show();
+            
             this.Hide();
         }
 
@@ -195,6 +209,7 @@ namespace Cine_Alfa
         {
             Play10 pl10 = new Play10();
             pl10.Show();
+            
             this.Hide();
         }
 
@@ -202,6 +217,7 @@ namespace Cine_Alfa
         {
             Play11 pl11 = new Play11();
             pl11.Show();
+            
             this.Hide();
         }
 
@@ -209,6 +225,7 @@ namespace Cine_Alfa
         {
             Play12 pl12 = new Play12();
             pl12.Show();
+            
             this.Hide();
         }
 
@@ -216,6 +233,7 @@ namespace Cine_Alfa
         {
             Play13 pl13 = new Play13();
             pl13.Show();
+            
             this.Hide();
         }
 
@@ -223,7 +241,11 @@ namespace Cine_Alfa
         {
             Play14 pl14 = new Play14();
             pl14.Show();
+            
             this.Hide();
         }
+
+        
+
     }
 }
