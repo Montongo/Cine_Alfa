@@ -94,6 +94,7 @@
             Controls.Add(atras3);
             Controls.Add(pictureBox1);
             Name = "Play13";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Play13";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

@@ -33,11 +33,16 @@ namespace Cine_Alfa.Peliculas
 
         private void button37_Click(object sender, EventArgs e)
         {
-            
+            Hora_random hora_Random = new Hora_random();
+            DateTime horaInicial = hora_Random.GenerarHoraAleatoria();
+            Nota.dato2(horaInicial.ToString("HH:mm"), horaInicial.AddMinutes(80).ToString("HH:mm"), horaInicial.AddMinutes(160).ToString("HH:mm"), horaInicial.AddMinutes(240).ToString("HH:mm"));
+            Nota.dato1(1);
+            char sal = Hora_random.Sala();
+            Nota.dato5(sal);
             Horarios horarios = new Horarios();
             horarios.Show();
-            horarios.Poner_img(1);
             this.Hide();
         }
+
     }
 }
