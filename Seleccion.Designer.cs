@@ -80,6 +80,7 @@
             label10 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            Sala = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -449,6 +450,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 39;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label3
             // 
@@ -471,6 +473,7 @@
             elegido.Size = new Size(73, 37);
             elegido.TabIndex = 43;
             elegido.Text = "-------";
+            elegido.Click += elegido_Click;
             // 
             // label5
             // 
@@ -569,12 +572,24 @@
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
+            // Sala
+            // 
+            Sala.AutoSize = true;
+            Sala.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Sala.ForeColor = SystemColors.ButtonFace;
+            Sala.Location = new Point(461, 118);
+            Sala.Name = "Sala";
+            Sala.Size = new Size(94, 50);
+            Sala.TabIndex = 53;
+            Sala.Text = "Sala";
+            // 
             // Seleccion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1232, 770);
+            Controls.Add(Sala);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(label10);
@@ -627,7 +642,9 @@
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "Seleccion";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "pi";
+            Load += Seleccion_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -689,5 +706,6 @@
         private Label label10;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private Label Sala;
     }
 }

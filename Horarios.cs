@@ -18,12 +18,12 @@ namespace Cine_Alfa
             InitializeComponent();
         }
 
-        Form3 panta3 = new Form3();
+        
 
-        int op;
-        public void Poner_img(int op)
+        int op = Nota.op;
+        public void Poner_img()
         {
-            this.op = op;
+            
 
             switch (op)
             {
@@ -80,7 +80,8 @@ namespace Cine_Alfa
         private void Hora1_Click(object sender, EventArgs e)
         {
 
-            panta3.Poner_img(op);
+            Nota.dato3(1);
+            Form3 panta3 = new Form3();
             panta3.Show();
             this.Hide();
         }
@@ -88,26 +89,18 @@ namespace Cine_Alfa
         private void Horarios_Load(object sender, EventArgs e)
         {
             Fecha.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
-            DateTime horaInicial = GenerarHoraAleatoria();
-
-            
-            Hora1.Text = horaInicial.ToString("HH:mm");
-            Hora2.Text = horaInicial.AddMinutes(80).ToString("HH:mm");
-            Hora3.Text = horaInicial.AddMinutes(160).ToString("HH:mm");
-            Hora4.Text = horaInicial.AddMinutes(240).ToString("HH:mm");
 
 
+
+            Hora1.Text = Nota.hora1;
+            Hora2.Text = Nota.hora2;
+            Hora3.Text = Nota.hora3;
+            Hora4.Text = Nota.hora4;
+
+            Poner_img();
 
         }
-        private DateTime GenerarHoraAleatoria()
-        {
-            Random random = new Random();
-            int hora = random.Next(11, 19);
-            int minutos = random.Next(0, 60);
-
-
-            return DateTime.Today.AddHours(hora).AddMinutes(minutos);
-        }
+        
 
         
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -118,7 +111,10 @@ namespace Cine_Alfa
         private void Hora2_Click(object sender, EventArgs e)
         {
 
-            panta3.Poner_img(op);
+            
+            
+            Nota.dato3(2);
+            Form3 panta3 = new Form3();
             panta3.Show();
             this.Hide();
         }
@@ -126,7 +122,10 @@ namespace Cine_Alfa
         private void Hora3_Click(object sender, EventArgs e)
         {
 
-            panta3.Poner_img(op);
+            
+            
+            Nota.dato3(3);
+            Form3 panta3 = new Form3();
             panta3.Show();
             this.Hide();
         }
@@ -134,8 +133,10 @@ namespace Cine_Alfa
         private void Hora4_Click(object sender, EventArgs e)
         {
 
-            panta3.Poner_img(op);
+            Nota.dato3(4);
+            Form3 panta3 = new Form3();
             panta3.Show();
+            
             this.Hide();
         }
 

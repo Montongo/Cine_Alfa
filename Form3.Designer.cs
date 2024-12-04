@@ -38,6 +38,7 @@
             label7 = new Label();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            Sala = new Label();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
@@ -158,6 +159,7 @@
             // panel1
             // 
             panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(Sala);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label8);
@@ -187,21 +189,35 @@
             panel1.Size = new Size(1137, 667);
             panel1.TabIndex = 13;
             // 
+            // Sala
+            // 
+            Sala.AutoSize = true;
+            Sala.Font = new Font("Consolas", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Sala.ForeColor = SystemColors.ButtonFace;
+            Sala.Location = new Point(761, 180);
+            Sala.Name = "Sala";
+            Sala.Size = new Size(0, 22);
+            Sala.TabIndex = 29;
+            // 
             // label10
             // 
             label10.AutoSize = true;
+            label10.Font = new Font("Consolas", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.ForeColor = SystemColors.ButtonFace;
             label10.Location = new Point(338, 180);
             label10.Name = "label10";
-            label10.Size = new Size(143, 20);
+            label10.Size = new Size(210, 22);
             label10.TabIndex = 28;
             label10.Text = "Cine: San francisco ";
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.Font = new Font("Consolas", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.ButtonFace;
             label9.Location = new Point(338, 141);
             label9.Name = "label9";
-            label9.Size = new Size(143, 20);
+            label9.Size = new Size(210, 22);
             label9.TabIndex = 27;
             label9.Text = "Cine: San francisco ";
             // 
@@ -385,6 +401,7 @@
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Form3";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
             Load += Form3_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -423,5 +440,6 @@
         private Label label10;
         private Label label9;
         private Label label8;
+        private Label Sala;
     }
 }

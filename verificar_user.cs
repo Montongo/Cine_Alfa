@@ -20,26 +20,27 @@ namespace Cine_Alfa
                 using (SqlConnection cone = new SqlConnection(connection))
                 {
                     cone.Open();
-                    string query = "SELECT n_usuario, contraseña FROM usuarios WHERE n_usuario = @n_usuario AND contraseña = @contraseña;";
+                    string query = "SELECT id FROM usuarios WHERE n_usuario = @n_usuario AND contraseña = @contraseña;";
                     using (SqlCommand cmd = new SqlCommand(query, cone))
                     {
-                        // Asegúrate de que los nombres de los parámetros coincidan exactamente
+                        
                         cmd.Parameters.AddWithValue("@n_usuario", usuario);
                         cmd.Parameters.AddWithValue("@contraseña", contra);
 
-                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
+                        object result = cmd.ExecuteScalar(); 
 
-                        if (dt.Rows.Count > 0)
+                        if (result != null)
                         {
+                            int idUsuario = Convert.ToInt32(result); 
+                            
+                            Nota.id(idUsuario);
+                            
                             MessageBox.Show("Bienvenido(a) " + usuario);
+                          
                             Catalogo ca = new Catalogo();
                             ca.Show();
                             Form1 panta1 = new Form1();
                             panta1.Close();
-
-                           
                         }
                         else
                         {

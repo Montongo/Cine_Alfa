@@ -54,7 +54,7 @@ namespace Cine_Alfa
                 verificar_user veri = new verificar_user();
                 veri.verificar(Ingresa_usuario.Text, Ingresa_password.Text);
                 
-                
+
             }
                 
 

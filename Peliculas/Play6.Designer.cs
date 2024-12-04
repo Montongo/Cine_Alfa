@@ -61,7 +61,7 @@
             // button37
             // 
             button37.Font = new Font("Segoe UI Black", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button37.Location = new Point(1059, 686);
+            button37.Location = new Point(1065, 687);
             button37.Name = "button37";
             button37.Size = new Size(309, 62);
             button37.TabIndex = 52;
@@ -93,6 +93,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "Play6";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Play6";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

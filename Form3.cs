@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Cine_Alfa
 {
@@ -16,7 +17,7 @@ namespace Cine_Alfa
         {
             InitializeComponent();
         }
-
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -24,9 +25,8 @@ namespace Cine_Alfa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Seleccion re = new Seleccion();
-            re.Show();
-            this.Hide();
+           
+          
 
         }
 
@@ -53,10 +53,11 @@ namespace Cine_Alfa
 
         }
 
-        int op;
-        public void Poner_img(int op)
+        int op = Nota.op;
+        int op2 = Nota.op2;
+        public void Poner_img()
         {
-            this.op = op;
+            
          
             switch(op)
             {
@@ -109,12 +110,39 @@ namespace Cine_Alfa
                     pictureBox4.Image = Properties.Resources._15;
                     break ;
             }
-        }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
+            if (op2 == 1)
+            {
+                label9.Text = "Hora: " + Nota.hora1;
+                label10.Text = "Fecha: " + DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            }
+            if (op2 == 2)
+            {
+                label9.Text = "Hora: " + Nota.hora2;
+                label10.Text = "Fecha: " + DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            }
+            if (op2 == 3)
+            {
+                label9.Text = "Hora: " + Nota.hora3;
+                label10.Text = "Fecha: " + DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            }
+            if (op2 == 4)
+            {
+                label9.Text = "Hora: " + Nota.hora4;
+                label10.Text = "Fecha: " + DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            }
+
+
             
 
+            Sala.Text = "Sala: " + Nota.sal.ToString();
+            
+        }
+
+       
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            Poner_img();
         }
         int n = 0;
         int n2 = 0;
@@ -181,9 +209,35 @@ namespace Cine_Alfa
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Seleccion re = new Seleccion();
-            re.Show();
-            this.Hide();
+            
+            
+            
+            if(adulto.Text == "0" && tercera.Text == "0" && infante.Text == "0")
+            {
+                MessageBox.Show("Seleccione sus boletos");
+            }
+
+            else
+            {
+                if (adulto.Text == "0" && tercera.Text == "0")
+                {
+                    MessageBox.Show("Un menor no puede entrar solo a la sala de cine");
+                }
+                else {
+                    
+                    this.Hide();
+
+                    int n1 = int.Parse(adulto.Text);
+                    int n2 = int.Parse(infante.Text);
+                    int n3 = int.Parse(tercera.Text);
+
+                    Nota.dato4(n1, n2, n3);
+                    Seleccion re = new Seleccion();
+                    re.Show();
+                }
+            }
+
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -192,5 +246,7 @@ namespace Cine_Alfa
             horarios.Show();
             this.Hide();
         }
+
+        
     }
 }
