@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace Cine_Alfa
 {
@@ -51,7 +52,12 @@ namespace Cine_Alfa
 
             else
             {
-                verificar_user veri = new verificar_user();
+                Catalogo catalgogo = new Catalogo();
+                verificar_user veri = new verificar_user(this,catalgogo );
+                
+
+                // Crear instancia de Clase1 y pasar las instancias de los formularios
+                
                 veri.verificar(Ingresa_usuario.Text, Ingresa_password.Text);
                 
 

@@ -9,8 +9,12 @@ using Microsoft.Data.SqlClient;
 
 namespace Cine_Alfa
 {
-    internal class verificar_user
+
+    internal class verificar_user(Form1 form1, Catalogo form2) 
     {
+        private Form form1 = form1;
+        private Form form2 = form2;
+
         string connection = ("Server=LAPTOP-0045SGMV\\SQLEXPRESS;Database=proyecto_ds;Integrated Security=True;TrustServerCertificate=True;");
 
         public void verificar(string usuario, string contra)
@@ -37,10 +41,8 @@ namespace Cine_Alfa
                             
                             MessageBox.Show("Bienvenido(a) " + usuario);
                           
-                            Catalogo ca = new Catalogo();
-                            ca.Show();
-                            Form1 panta1 = new Form1();
-                            panta1.Close();
+                            form2.Show();
+                            form1.Hide();
                         }
                         else
                         {
