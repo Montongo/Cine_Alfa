@@ -363,6 +363,7 @@
             adulto.Size = new Size(20, 22);
             adulto.TabIndex = 15;
             adulto.Text = "0";
+            adulto.Click += adulto_Click;
             // 
             // button3
             // 
