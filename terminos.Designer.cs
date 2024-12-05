@@ -23,19 +23,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(terminos));
             panel1 = new Panel();
+            pictureBox3 = new PictureBox();
+            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label2 = new Label();
             button1 = new Button();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.DimGray;
+            panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label2);
@@ -45,6 +48,30 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1272, 795);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.regresar1;
+            pictureBox3.Location = new Point(10, 607);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(103, 75);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 13;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(10, -13);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(131, 126);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -87,19 +114,6 @@
             label1.TabIndex = 0;
             label1.Text = "Terminos y condiciones";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(10, -13);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(131, 126);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
-            // 
             // terminos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -107,11 +121,13 @@
             ClientSize = new Size(1262, 673);
             Controls.Add(panel1);
             Name = "terminos";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "terminos";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -123,5 +139,6 @@
         private PictureBox pictureBox2;
         private Label label2;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
     }
 }

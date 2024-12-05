@@ -23,6 +23,10 @@ namespace Cine_Alfa
             Catch_datos();
         }
 
+        public void SetSillaText(string sillaText)
+        {
+            Asientos.Text = "Asientos: "+sillaText;
+        }
         string[] n_pelis = { "Endgame", "Infinty War", "Joker", "It", "John Wick 2", "Deadpool 2", "Spiderman: No way home", "Doctor Strange", "Thor", "Iron Man 2", "Guardianes de la galaxia", "Black Widow", "Ant-Man", "Deadpool & Wolverine" };
         int op = Nota.op;
         int op2 = Nota.op2, n1 = Nota.n1, n2 = Nota.n2, n3 = Nota.n3;

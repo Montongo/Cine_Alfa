@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
@@ -43,12 +44,14 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
@@ -67,6 +70,17 @@
             panel1.Size = new Size(785, 561);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.regresar1;
+            pictureBox2.Location = new Point(3, 489);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(105, 82);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 16;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label6
             // 
@@ -182,6 +196,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = Properties.Resources.Logo_cine;
             pictureBox1.Location = new Point(3, 21);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(226, 205);
@@ -196,10 +211,12 @@
             ClientSize = new Size(783, 559);
             Controls.Add(panel1);
             Name = "new_user";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "new_user";
             Load += new_user_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -220,5 +237,6 @@
         private Label label4;
         private Panel panel2;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

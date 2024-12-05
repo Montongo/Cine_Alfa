@@ -47,5 +47,12 @@ namespace Cine_Alfa
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form1 panta1 = new Form1();
+            panta1.Show();
+            this.Hide();
+        }
     }
 }

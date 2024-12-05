@@ -113,7 +113,7 @@
             // Boletos
             // 
             Boletos.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Boletos.Location = new Point(464, 240);
+            Boletos.Location = new Point(368, 240);
             Boletos.Name = "Boletos";
             Boletos.Size = new Size(514, 20);
             Boletos.TabIndex = 14;
@@ -121,7 +121,7 @@
             // Hora
             // 
             Hora.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Hora.Location = new Point(464, 204);
+            Hora.Location = new Point(350, 204);
             Hora.Name = "Hora";
             Hora.Size = new Size(137, 31);
             Hora.TabIndex = 15;
@@ -130,7 +130,7 @@
             // Fecha
             // 
             Fecha.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Fecha.Location = new Point(464, 164);
+            Fecha.Location = new Point(350, 162);
             Fecha.Name = "Fecha";
             Fecha.Size = new Size(288, 73);
             Fecha.TabIndex = 16;
@@ -232,21 +232,23 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1263, 675);
             panel1.TabIndex = 53;
+            panel1.Paint += panel1_Paint;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(689, 240);
+            label8.Location = new Point(839, 240);
             label8.Name = "label8";
-            label8.Size = new Size(0, 20);
+            label8.Size = new Size(18, 20);
             label8.TabIndex = 33;
+            label8.Text = "3";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Consolas", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(559, 240);
+            label7.Location = new Point(743, 240);
             label7.Name = "label7";
             label7.Size = new Size(90, 20);
             label7.TabIndex = 32;
@@ -256,7 +258,7 @@
             // 
             Sala.AutoSize = true;
             Sala.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Sala.Location = new Point(669, 122);
+            Sala.Location = new Point(839, 164);
             Sala.Name = "Sala";
             Sala.Size = new Size(63, 20);
             Sala.TabIndex = 31;
@@ -266,7 +268,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Consolas", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(559, 122);
+            label5.Location = new Point(743, 162);
             label5.Name = "label5";
             label5.Size = new Size(54, 20);
             label5.TabIndex = 30;

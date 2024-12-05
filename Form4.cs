@@ -25,6 +25,8 @@ namespace Cine_Alfa
         public void SetSillaText(string sillaText)
         {
             label8.Text = sillaText; // Asignar el texto recibido a Label8
+            pantalla_final panta_Fin = new pantalla_final();
+            panta_Fin.SetSillaText(sillaText);
         }
 
         string connection = ("Server=LAPTOP-0045SGMV\\SQLEXPRESS;Database=proyecto_ds;Integrated Security=True;TrustServerCertificate=True;");
@@ -50,18 +52,18 @@ namespace Cine_Alfa
                 }
                 else
                 {
-                    MessageBox.Show("Su cambio es: $"+(int.Parse(cantidad.Text)-total));
+                    MessageBox.Show("Su cambio es: $" + (int.Parse(cantidad.Text) - total));
                     pantalla_final panta_fin = new pantalla_final();
                     panta_fin.Show();
                     this.Hide();
-                    
+
 
                     int id_tercera, id_adult, id_infan;
 
                     int id_u = Nota.id_u;
 
 
-                    int id_sala=0;
+                    int id_sala = 0;
 
                     if (Nota.sal == 'a')
                     {
@@ -82,101 +84,101 @@ namespace Cine_Alfa
 
                     using (SqlConnection conn = new SqlConnection(connection))
                     {
-                        
-                            conn.Open();
+
+                        conn.Open();
                         string query = @"INSERT INTO compra (id_cliente, id_pelicula, id_sala, Total, Efectivo, Cambio, fecha, hora) 
                                         VALUES (@id_us, @id_peli, @id_sal, @total, @efecti, @cam, @fecha, @hora);
                                         SELECT SCOPE_IDENTITY();";
 
                         using (SqlCommand cmd = new SqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@id_us", Nota.id_u);
+                            cmd.Parameters.AddWithValue("@id_peli", Nota.op);
+                            cmd.Parameters.AddWithValue("@id_sal", id_sala);
+                            cmd.Parameters.AddWithValue("@total", total);
+                            cmd.Parameters.AddWithValue("@efecti", cantidad.Text);
+                            cmd.Parameters.AddWithValue("@cam", (int.Parse(cantidad.Text) - total));
+                            cmd.Parameters.AddWithValue("@fecha", DateTime.Now.ToString("dddd, dd MMMM yyyy"));
+
+                            if (op2 == 1)
                             {
-                                cmd.Parameters.AddWithValue("@id_us", Nota.id_u);
-                                cmd.Parameters.AddWithValue("@id_peli", Nota.op);
-                                cmd.Parameters.AddWithValue("@id_sal", id_sala);
-                                cmd.Parameters.AddWithValue("@total", total);
-                                cmd.Parameters.AddWithValue("@efecti", cantidad.Text);
-                                cmd.Parameters.AddWithValue("@cam", (int.Parse(cantidad.Text) - total));
-                                cmd.Parameters.AddWithValue("@fecha", DateTime.Now.ToString("dddd, dd MMMM yyyy"));
+                                cmd.Parameters.AddWithValue("@hora", Nota.hora1);
 
-                                if (op2 == 1)
-                                {
-                                    cmd.Parameters.AddWithValue("@hora", Nota.hora1);
+                            }
+                            if (op2 == 2)
+                            {
+                                cmd.Parameters.AddWithValue("@hora", Nota.hora2);
 
-                                }
-                                if (op2 == 2)
-                                {
-                                    cmd.Parameters.AddWithValue("@hora", Nota.hora2);
+                            }
+                            if (op2 == 3)
+                            {
+                                cmd.Parameters.AddWithValue("@hora", Nota.hora3);
 
-                                }
-                                if (op2 == 3)
-                                {
-                                    cmd.Parameters.AddWithValue("@hora", Nota.hora3);
-
-                                }
-                                if (op2 == 4)
-                                {
-                                    cmd.Parameters.AddWithValue("@hora", Nota.hora4);
-
-                                }
-
-
-                                idCompra = Convert.ToInt32(cmd.ExecuteScalar());
-
-
-                                
-
-                                MessageBox.Show("Pago realizado con éxito "+idCompra);
-
-                                panta_fin.num_compra(idCompra);
-
-                                
-                                if (n1 > 0)
-                                {
-                                    id_adult = 1;
-                                    query = "INSERT INTO Detallecompra (id_compra, id_boleto, Cantidad) VALUES (@id_com, @id_bol, @can);";
-                                    cmd.CommandText = query;
-                                    cmd.Parameters.Clear();
-                                    cmd.Parameters.AddWithValue("@id_com", idCompra);
-                                    cmd.Parameters.AddWithValue("@id_bol", id_adult);
-                                    cmd.Parameters.AddWithValue("@can", n1);
-
-                                    cmd.ExecuteNonQuery();
-
-                                }
-                                if (n2 > 0)
-                                {
-                                    id_infan = 2;
-                                    query = "INSERT INTO Detallecompra (id_compra, id_boleto, Cantidad) VALUES (@id_com, @id_bol, @can);";
-                                    cmd.CommandText = query;
-                                    cmd.Parameters.Clear();
-                                    cmd.Parameters.AddWithValue("@id_com", idCompra);
-                                    cmd.Parameters.AddWithValue("@id_bol", id_infan);
-                                    cmd.Parameters.AddWithValue("@can", n2);
-                                    cmd.ExecuteNonQuery();
-                                }
-                                if (n3 > 0)
-                                {
-                                    id_tercera = 3;
-                                    query = "INSERT INTO Detallecompra (id_compra, id_boleto, Cantidad) VALUES (@id_com, @id_bol, @can);";
-                                    cmd.CommandText = query;
-                                    cmd.Parameters.Clear();
-                                    cmd.Parameters.AddWithValue("@id_com", idCompra);
-                                    cmd.Parameters.AddWithValue("@id_bol", id_tercera);
-                                    cmd.Parameters.AddWithValue("@can", n3);
-                                    cmd.ExecuteNonQuery();
-
-                                }
-                                
+                            }
+                            if (op2 == 4)
+                            {
+                                cmd.Parameters.AddWithValue("@hora", Nota.hora4);
 
                             }
 
-                        
-                       
+
+                            idCompra = Convert.ToInt32(cmd.ExecuteScalar());
+
+
+
+
+                            MessageBox.Show("Pago realizado con éxito " + idCompra);
+
+                            panta_fin.num_compra(idCompra);
+
+
+                            if (n1 > 0)
+                            {
+                                id_adult = 1;
+                                query = "INSERT INTO Detallecompra (id_compra, id_boleto, Cantidad) VALUES (@id_com, @id_bol, @can);";
+                                cmd.CommandText = query;
+                                cmd.Parameters.Clear();
+                                cmd.Parameters.AddWithValue("@id_com", idCompra);
+                                cmd.Parameters.AddWithValue("@id_bol", id_adult);
+                                cmd.Parameters.AddWithValue("@can", n1);
+
+                                cmd.ExecuteNonQuery();
+
+                            }
+                            if (n2 > 0)
+                            {
+                                id_infan = 2;
+                                query = "INSERT INTO Detallecompra (id_compra, id_boleto, Cantidad) VALUES (@id_com, @id_bol, @can);";
+                                cmd.CommandText = query;
+                                cmd.Parameters.Clear();
+                                cmd.Parameters.AddWithValue("@id_com", idCompra);
+                                cmd.Parameters.AddWithValue("@id_bol", id_infan);
+                                cmd.Parameters.AddWithValue("@can", n2);
+                                cmd.ExecuteNonQuery();
+                            }
+                            if (n3 > 0)
+                            {
+                                id_tercera = 3;
+                                query = "INSERT INTO Detallecompra (id_compra, id_boleto, Cantidad) VALUES (@id_com, @id_bol, @can);";
+                                cmd.CommandText = query;
+                                cmd.Parameters.Clear();
+                                cmd.Parameters.AddWithValue("@id_com", idCompra);
+                                cmd.Parameters.AddWithValue("@id_bol", id_tercera);
+                                cmd.Parameters.AddWithValue("@can", n3);
+                                cmd.ExecuteNonQuery();
+
+                            }
+
+
+                        }
+
+
+
                     }
 
-                        
 
-                    
+
+
 
                 }
             }
@@ -227,7 +229,7 @@ namespace Cine_Alfa
 
         }
 
-        
+
 
         public void datos2()
         {
@@ -256,9 +258,9 @@ namespace Cine_Alfa
             }
 
             Sala.Text = Nota.sal.ToString();
-            
+
             total = (n1 * 90) + (n2 * 60) + (n3 * 60);
-            
+
 
             label12.Text = total.ToString();
 
@@ -281,7 +283,7 @@ namespace Cine_Alfa
                     Boletos.Text = "Adulto (" + n1 + ")" + ", Niño (" + n2 + ")" + ", Tercera edad (" + n3 + ")";
                 }
             }
-            if (n1 >= 1 && n3==0)
+            if (n1 >= 1 && n3 == 0)
             {
                 if (n2 >= 1)
                 {
@@ -289,7 +291,7 @@ namespace Cine_Alfa
                 }
             }
 
-            if (n3 >= 1 && n1==0)
+            if (n3 >= 1 && n1 == 0)
             {
                 if (n2 >= 1)
                 {
@@ -304,11 +306,11 @@ namespace Cine_Alfa
         }
 
         int op = Nota.op;
-        string[] n_pelis = { "Endgame", "Infinty War", "Joker", "It", "John Wick 2", "Deadpool 2" , "Spiderman: No way home", "Doctor Strange", "Thor" , "Iron Man 2", "Guardianes de la galaxia", "Black Widow" , "Ant-Man", "Deadpool & Wolverine"};
-        
+        string[] n_pelis = { "Endgame", "Infinty War", "Joker", "It", "John Wick 2", "Deadpool 2", "Spiderman: No way home", "Doctor Strange", "Thor", "Iron Man 2", "Guardianes de la galaxia", "Black Widow", "Ant-Man", "Deadpool & Wolverine" };
+
         public void pelis()
         {
-            
+
 
             label1.Text = n_pelis[op - 1];
             switch (op)
@@ -363,10 +365,13 @@ namespace Cine_Alfa
                     break;
             }
 
-            
+
         }
 
-        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

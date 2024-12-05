@@ -40,14 +40,17 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(pictureBox1);
@@ -163,13 +166,24 @@
             // 
             // pictureBox2
             // 
-       
-            pictureBox2.Location = new Point(-23, 297);
+            pictureBox2.Image = Properties.Resources.Logo_cine;
+            pictureBox2.Location = new Point(3, 202);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(219, 194);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.regresar1;
+            pictureBox3.Location = new Point(0, 430);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(129, 75);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 13;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // restore_contra
             // 
@@ -178,11 +192,13 @@
             ClientSize = new Size(788, 494);
             Controls.Add(panel1);
             Name = "restore_contra";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "restore_contra";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -200,5 +216,6 @@
         private Label label5;
         private Label label4;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

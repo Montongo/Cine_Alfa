@@ -116,7 +116,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.websiteQRCode_noFrame;
-            pictureBox2.Location = new Point(967, 118);
+            pictureBox2.Location = new Point(1006, 113);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(225, 224);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
