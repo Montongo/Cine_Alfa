@@ -43,14 +43,16 @@
             Cambio = new Label();
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
+            label8 = new Label();
+            label7 = new Label();
+            Sala = new Label();
+            label5 = new Label();
             label1 = new Label();
             panel2 = new Panel();
             pictureBox2 = new PictureBox();
             cantidad = new TextBox();
             label15 = new Label();
             pictureBox4 = new PictureBox();
-            label5 = new Label();
-            Sala = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
@@ -115,7 +117,6 @@
             Boletos.Name = "Boletos";
             Boletos.Size = new Size(514, 20);
             Boletos.TabIndex = 14;
-            Boletos.Text = "3";
             // 
             // Hora
             // 
@@ -205,6 +206,8 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonFace;
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label7);
             panel1.Controls.Add(Sala);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label1);
@@ -229,6 +232,45 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1263, 675);
             panel1.TabIndex = 53;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(689, 240);
+            label8.Name = "label8";
+            label8.Size = new Size(0, 20);
+            label8.TabIndex = 33;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Consolas", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(559, 240);
+            label7.Name = "label7";
+            label7.Size = new Size(90, 20);
+            label7.TabIndex = 32;
+            label7.Text = "Asientos:";
+            // 
+            // Sala
+            // 
+            Sala.AutoSize = true;
+            Sala.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Sala.Location = new Point(669, 122);
+            Sala.Name = "Sala";
+            Sala.Size = new Size(63, 20);
+            Sala.TabIndex = 31;
+            Sala.Text = "label7";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Consolas", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(559, 122);
+            label5.Name = "label5";
+            label5.Size = new Size(54, 20);
+            label5.TabIndex = 30;
+            label5.Text = "Sala:";
             // 
             // label1
             // 
@@ -279,32 +321,12 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.icone_trait_gris;
-            pictureBox4.Location = new Point(49, 250);
+            pictureBox4.Location = new Point(49, 260);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(1174, 62);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 28;
             pictureBox4.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Consolas", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(524, 122);
-            label5.Name = "label5";
-            label5.Size = new Size(54, 20);
-            label5.TabIndex = 30;
-            label5.Text = "Sala:";
-            // 
-            // Sala
-            // 
-            Sala.AutoSize = true;
-            Sala.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Sala.Location = new Point(599, 122);
-            Sala.Name = "Sala";
-            Sala.Size = new Size(63, 20);
-            Sala.TabIndex = 31;
-            Sala.Text = "label7";
             // 
             // Form4
             // 
@@ -351,5 +373,7 @@
         private Label label1;
         private Label Sala;
         private Label label5;
+        private Label label8;
+        private Label label7;
     }
 }

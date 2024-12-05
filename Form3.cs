@@ -252,5 +252,10 @@ namespace Cine_Alfa
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

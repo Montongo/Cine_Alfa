@@ -178,10 +178,12 @@
             button133 = new Button();
             button134 = new Button();
             Sala = new Label();
+            pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -559,18 +561,19 @@
             label3.AutoSize = true;
             label3.BackColor = SystemColors.ActiveCaption;
             label3.Font = new Font("Impact", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(12, 257);
+            label3.Location = new Point(12, 248);
             label3.Name = "label3";
             label3.Size = new Size(324, 45);
             label3.TabIndex = 42;
             label3.Text = "Boletos Adquiridos";
+            label3.Click += label3_Click;
             // 
             // elegido
             // 
             elegido.AutoSize = true;
             elegido.Font = new Font("Candara", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             elegido.ForeColor = Color.Lime;
-            elegido.Location = new Point(66, 321);
+            elegido.Location = new Point(30, 302);
             elegido.Name = "elegido";
             elegido.Size = new Size(73, 37);
             elegido.TabIndex = 43;
@@ -1590,12 +1593,23 @@
             // Sala
             // 
             Sala.AutoSize = true;
+            Sala.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Sala.ForeColor = Color.Transparent;
-            Sala.Location = new Point(472, 36);
+            Sala.Location = new Point(586, 210);
             Sala.Name = "Sala";
-            Sala.Size = new Size(37, 20);
+            Sala.Size = new Size(75, 32);
             Sala.TabIndex = 152;
             Sala.Text = "Sala";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.Location = new Point(193, 14);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(125, 147);
+            pictureBox5.TabIndex = 153;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // Seleccion
             // 
@@ -1604,6 +1618,7 @@
             BackColor = SystemColors.ActiveCaptionText;
             BackgroundImage = Properties.Resources.vecteezy_graphic_design_blue_color_tone_for_wallpaper_background_7213350;
             ClientSize = new Size(1232, 770);
+            Controls.Add(pictureBox5);
             Controls.Add(Sala);
             Controls.Add(button134);
             Controls.Add(button133);
@@ -1761,6 +1776,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1916,5 +1932,6 @@
         private Button button133;
         private Button button134;
         private Label Sala;
+        private PictureBox pictureBox5;
     }
 }

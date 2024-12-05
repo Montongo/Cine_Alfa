@@ -34,7 +34,7 @@ namespace Cine_Alfa
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            panta4.SetSillaText(Silla.Text);
             panta4.Show();
             this.Hide();
 
@@ -59,7 +59,7 @@ namespace Cine_Alfa
 
         private void Seleccion_Load(object sender, EventArgs e)
         {
-
+           
             maxClicks = n1 + n2 + n3;
             Asientos();
         }
@@ -843,6 +843,16 @@ namespace Cine_Alfa
         }
 
         private void Silla_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
 
         }

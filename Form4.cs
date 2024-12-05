@@ -22,6 +22,11 @@ namespace Cine_Alfa
         {
             InitializeComponent();
         }
+        public void SetSillaText(string sillaText)
+        {
+            label8.Text = sillaText; // Asignar el texto recibido a Label8
+        }
+
         string connection = ("Server=LAPTOP-0045SGMV\\SQLEXPRESS;Database=proyecto_ds;Integrated Security=True;TrustServerCertificate=True;");
         private void label6_Click(object sender, EventArgs e)
         {
