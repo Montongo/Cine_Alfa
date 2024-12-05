@@ -23,5 +23,10 @@ namespace Cine_Alfa
             c.Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -186,7 +186,7 @@
             panel1.Controls.Add(label4);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1137, 667);
+            panel1.Size = new Size(1263, 677);
             panel1.TabIndex = 13;
             // 
             // Sala
@@ -397,7 +397,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1136, 667);
+            ClientSize = new Size(1262, 673);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Form3";
