@@ -127,7 +127,7 @@ namespace Cine_Alfa
 
 
 
-                            MessageBox.Show("Pago realizado con éxito " + idCompra);
+                            MessageBox.Show("Pago realizado con éxito ");
 
                             panta_fin.num_compra(idCompra);
 

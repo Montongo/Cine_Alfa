@@ -37,7 +37,8 @@ namespace Cine_Alfa
             {
                 if (ingresar_contra.Text.Equals(confirmar_contra.Text))
                 {
-                    restaurar_contra restore = new restaurar_contra();
+                    Form1 form1 = new Form1();
+                    restaurar_contra restore = new restaurar_contra(form1, this);
                     restore.restaurar(ingresar_usuario.Text, ingresar_contra.Text);
                 }
                 else

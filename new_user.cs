@@ -33,7 +33,8 @@ namespace Cine_Alfa
             {
                 if (ingresa_contra.Text.Equals(confirma_contra.Text))
                 {
-                    user_nuevo us_nuevo = new user_nuevo();
+                    Form1 form1 = new Form1();
+                    user_nuevo us_nuevo = new user_nuevo(form1, this);
                     us_nuevo.crear_user(ingresa_nombre.Text, ingresa_user.Text, ingresa_contra.Text);
                 }
                 else

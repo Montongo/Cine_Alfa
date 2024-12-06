@@ -8,8 +8,12 @@ using Microsoft.Data.SqlClient;
 
 namespace Cine_Alfa
 {
-    internal class restaurar_contra
+    internal class restaurar_contra(Form1 form1, restore_contra form2)
     {
+        private Form form1 = form1;
+        private Form form2 = form2;
+
+
         string connection = ("Server=LAPTOP-0045SGMV\\SQLEXPRESS;Database=proyecto_ds;Integrated Security=True;TrustServerCertificate=True;");
 
         public void restaurar(string usuario, string contraseña)
@@ -47,11 +51,8 @@ namespace Cine_Alfa
                         if (filasActualizadas > 0)
                         {
                             MessageBox.Show("Contraseña actualizada con éxito");
-                            Form1 form1 = new Form1();
                             form1.Show();
-
-                            restore_contra restore = new restore_contra();
-                            restore.Hide();
+                            form2.Hide();
                         }
                         else
                         {
