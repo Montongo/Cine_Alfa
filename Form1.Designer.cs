@@ -37,12 +37,12 @@
             button1 = new Button();
             button2 = new Button();
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             linkLabel1 = new LinkLabel();
             label5 = new Label();
             create_cuen = new Button();
             label4 = new Label();
             label3 = new Label();
-            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -152,6 +152,16 @@
             panel1.TabIndex = 7;
             panel1.Paint += panel1_Paint;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.USUA;
+            pictureBox2.Location = new Point(567, 159);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(125, 62);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
+            // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
@@ -178,7 +188,7 @@
             // create_cuen
             // 
             create_cuen.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            create_cuen.Location = new Point(576, 632);
+            create_cuen.Location = new Point(576, 624);
             create_cuen.Name = "create_cuen";
             create_cuen.Size = new Size(142, 45);
             create_cuen.TabIndex = 7;
@@ -209,16 +219,6 @@
             label3.Size = new Size(198, 32);
             label3.TabIndex = 1;
             label3.Text = "Iniciar sesión";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.USUA;
-            pictureBox2.Location = new Point(567, 159);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 62);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 10;
-            pictureBox2.TabStop = false;
             // 
             // Form1
             // 
